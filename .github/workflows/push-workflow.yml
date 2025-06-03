@@ -1,6 +1,6 @@
 name: On Push
 
-on: push
+on: workflow_dispatch
 
 jobs:
   run-on-push:
