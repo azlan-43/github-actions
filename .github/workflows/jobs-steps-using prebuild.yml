@@ -1,4 +1,4 @@
-name: jobs & steps
+name: jobs & steps by using prebuild
 on: workflow_dispatch
 jobs:
   build:
