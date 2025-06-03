@@ -1,7 +1,7 @@
 name: On Push to Main
 
 on:
-  push:
+  workflow_dispatch:
     branches:
       - main
 
