@@ -14,11 +14,13 @@ jobs:
         run: echo "build is completed"
 
   test: 
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: test started
         run: echo "test started"
   deploy: 
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: deployment
