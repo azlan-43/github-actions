@@ -18,3 +18,8 @@ jobs:
     steps:
       - name: test started
         run: echo "test started"
+  deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: deployment
+        run: echo "deployment completed"
