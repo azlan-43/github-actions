@@ -1,5 +1,5 @@
 name: jobs & steps by using prebuild
-on: workflow_dispatch
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,3 +10,5 @@ jobs:
         uses: actions/checkout@v4.2.2
       - name: check the code
         run: ls -a
+      - name: checkout the code
+        run: echo "build is completed"
