@@ -1,0 +1,20 @@
+name: jobs & steps by using prebuild
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build started
+        run: echo "build started"
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: check the code
+        run: ls -a
+      - name: checkout the code
+        run: echo "build is completed"
+
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: test started
+        run: echo "test started"
