@@ -1,0 +1,10 @@
+name: self runner
+on: workflow_dispatch
+jobs:
+  my-runner:
+    runs-on: myrunner
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: list files
+        run: ls -a
